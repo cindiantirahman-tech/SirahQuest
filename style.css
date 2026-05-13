@@ -1,0 +1,714 @@
+/* =========================================================
+   SIRAHQUEST - STYLE.CSS
+   Landing Page + LMS Learning Page
+========================================================= */
+
+/* =========================
+   ROOT WARNA
+========================= */
+
+:root{
+
+  /* WARNA UTAMA */
+  --primary-color:#ff8c42;
+
+  /* WARNA SEKUNDER */
+  --secondary-color:#ffffff;
+
+  /* WARNA AKSEN */
+  --accent-color:#222222;
+
+  /* BACKGROUND */
+  --background-main:#fff4eb;
+
+  /* CARD */
+  --card-background:#ffffff;
+
+  /* TEKS */
+  --text-main:#222222;
+  --text-secondary:#666666;
+
+  /* SHADOW */
+  --shadow-light:0 4px 12px rgba(0,0,0,0.08);
+
+  /* BORDER */
+  --radius:18px;
+
+}
+
+/* =========================
+   RESET
+========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  background:var(--background-main);
+  color:var(--text-main);
+  line-height:1.7;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+  background:var(--secondary-color);
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:var(--shadow-light);
+}
+
+.nav-container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 0;
+}
+
+.logo{
+  color:var(--primary-color);
+  font-size:28px;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav-links{
+  display:flex;
+  gap:20px;
+  list-style:none;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:var(--text-main);
+  transition:0.3s;
+  font-weight:500;
+}
+
+.nav-links a:hover{
+  color:var(--primary-color);
+}
+
+/* =========================
+   HAMBURGER
+========================= */
+
+.hamburger{
+  display:none;
+  flex-direction:column;
+  gap:5px;
+  cursor:pointer;
+}
+
+.hamburger span{
+  width:25px;
+  height:3px;
+  background:var(--accent-color);
+  border-radius:10px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn{
+  display:inline-block;
+  padding:12px 24px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.primary-btn{
+  background:var(--primary-color);
+  color:white;
+}
+
+.primary-btn:hover{
+  transform:translateY(-3px);
+}
+
+.secondary-btn{
+  background:white;
+  color:var(--text-main);
+  border:1px solid #ddd;
+}
+
+.secondary-btn:hover{
+  transform:translateY(-3px);
+}
+
+/* =========================================================
+   LANDING PAGE
+========================================================= */
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  padding:80px 0;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.hero-text h2{
+  font-size:3rem;
+  margin:10px 0;
+}
+
+.tagline{
+  color:var(--primary-color);
+  font-weight:bold;
+}
+
+.hero-buttons{
+  margin-top:25px;
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.hero-image img{
+  width:100%;
+  border-radius:var(--radius);
+  object-fit:cover;
+  box-shadow:var(--shadow-light);
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.section{
+  padding:80px 0;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.section-title h2{
+  margin-bottom:12px;
+}
+
+/* =========================
+   CARD GRID
+========================= */
+
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.card{
+  background:var(--card-background);
+  padding:25px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow-light);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+/* =========================
+   SOLUSI
+========================= */
+
+.solusi-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.solusi-image img{
+  width:100%;
+  border-radius:var(--radius);
+  object-fit:cover;
+  box-shadow:var(--shadow-light);
+}
+
+.benefit-list{
+  margin-top:20px;
+  padding-left:20px;
+}
+
+/* =========================
+   FITUR
+========================= */
+
+.fitur-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+
+.fitur-card{
+  background:white;
+  padding:25px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow-light);
+  transition:0.3s;
+}
+
+.fitur-card:hover{
+  transform:translateY(-5px);
+}
+
+/* =========================
+   AKSES
+========================= */
+
+.akses-section{
+  padding:80px 20px;
+  text-align:center;
+  background:var(--primary-color);
+  color:white;
+}
+
+.akses-buttons{
+  margin-top:30px;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+/* =========================
+   TEAM
+========================= */
+
+.team-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.team-card{
+  background:white;
+  padding:25px;
+  border-radius:var(--radius);
+  text-align:center;
+  box-shadow:var(--shadow-light);
+  transition:0.3s;
+}
+
+.team-card:hover{
+  transform:translateY(-5px);
+}
+
+.team-card img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:15px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+  background:#111111;
+  color:white;
+  text-align:center;
+  padding:25px;
+}
+
+/* =========================================================
+   LMS LEARNING PAGE
+========================================================= */
+
+/* =========================
+   LMS LAYOUT
+========================= */
+
+.lms-layout{
+  display:grid;
+  grid-template-columns:280px 1fr;
+  min-height:100vh;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar{
+  background:white;
+  padding:30px 20px;
+  border-right:1px solid #eeeeee;
+  height:100vh;
+  position:sticky;
+  top:70px;
+  overflow:auto;
+}
+
+.sidebar-header h2{
+  color:var(--primary-color);
+}
+
+.sidebar-header p{
+  color:var(--text-secondary);
+  margin-top:5px;
+}
+
+.menu-section{
+  margin-top:30px;
+}
+
+.menu-section h3{
+  margin-bottom:12px;
+  font-size:16px;
+}
+
+.menu-section ul{
+  list-style:none;
+}
+
+.menu-section li{
+  margin-bottom:10px;
+}
+
+.menu-section a{
+  text-decoration:none;
+  color:var(--text-main);
+  transition:0.3s;
+}
+
+.menu-section a:hover{
+  color:var(--primary-color);
+  padding-left:5px;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.content-area{
+  padding:40px;
+}
+
+/* =========================
+   LMS HERO
+========================= */
+
+.lms-hero{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  display:grid;
+  grid-template-columns:1fr 300px;
+  gap:30px;
+  align-items:center;
+  box-shadow:var(--shadow-light);
+  margin-bottom:30px;
+}
+
+.lms-hero img{
+  width:100%;
+  border-radius:18px;
+  object-fit:cover;
+}
+
+.badge{
+  display:inline-block;
+  background:rgba(255,140,66,0.15);
+  color:var(--primary-color);
+  padding:8px 14px;
+  border-radius:30px;
+  font-size:14px;
+  margin-bottom:15px;
+}
+
+/* =========================
+   PROGRESS
+========================= */
+
+.progress-card{
+  background:white;
+  padding:25px;
+  border-radius:18px;
+  margin-bottom:30px;
+  box-shadow:var(--shadow-light);
+}
+
+.progress-bar{
+  width:100%;
+  height:12px;
+  background:#eeeeee;
+  border-radius:20px;
+  overflow:hidden;
+  margin-top:15px;
+}
+
+.progress-fill{
+  width:75%;
+  height:100%;
+  background:var(--primary-color);
+}
+
+/* =========================
+   MATERI CARD
+========================= */
+
+.materi-card{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  margin-bottom:30px;
+  box-shadow:var(--shadow-light);
+}
+
+.card-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:15px;
+}
+
+.materi-tag{
+  background:rgba(255,140,66,0.15);
+  color:var(--primary-color);
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:14px;
+}
+
+.durasi{
+  font-size:14px;
+  color:var(--text-secondary);
+}
+
+.materi-box{
+  background:#fafafa;
+  padding:20px;
+  border-radius:14px;
+  margin-top:20px;
+}
+
+.materi-box h3{
+  margin-bottom:10px;
+}
+
+.materi-box ul{
+  margin-left:20px;
+}
+
+/* =========================
+   VIDEO
+========================= */
+
+.video-thumbnail{
+  position:relative;
+  margin-top:20px;
+}
+
+.video-thumbnail img{
+  width:100%;
+  border-radius:18px;
+  object-fit:cover;
+}
+
+.play-button{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  background:var(--primary-color);
+  color:white;
+  padding:16px 28px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.play-button:hover{
+  opacity:0.9;
+}
+
+/* =========================
+   QUIZ
+========================= */
+
+.quiz-box{
+  margin-top:20px;
+}
+
+.quiz-box button{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  margin-top:12px;
+  cursor:pointer;
+  background:#f1f1f1;
+  transition:0.3s;
+  font-size:16px;
+}
+
+.quiz-box button:hover{
+  background:var(--primary-color);
+  color:white;
+}
+
+/* =========================
+   GAME SECTION
+========================= */
+
+.game-section{
+  margin-top:30px;
+}
+
+.game-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:20px;
+  margin-top:25px;
+}
+
+.game-card{
+  background:#fafafa;
+  padding:25px;
+  border-radius:20px;
+  border:1px solid #eeeeee;
+  transition:0.3s;
+}
+
+.game-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.game-icon{
+  font-size:40px;
+  margin-bottom:15px;
+}
+
+.game-card h3{
+  margin-bottom:12px;
+}
+
+.game-card p{
+  color:#666666;
+  margin-bottom:20px;
+}
+
+.game-button{
+  display:inline-block;
+  background:var(--primary-color);
+  color:white;
+  padding:12px 20px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.game-button:hover{
+  opacity:0.9;
+}
+
+/* =========================
+   REVEAL ANIMATION
+========================= */
+
+.reveal{
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:900px){
+
+  .hero-grid,
+  .solusi-grid,
+  .card-grid,
+  .fitur-grid,
+  .lms-hero{
+    grid-template-columns:1fr;
+  }
+
+  .lms-layout{
+    grid-template-columns:1fr;
+  }
+
+  .sidebar{
+    position:relative;
+    top:0;
+    height:auto;
+  }
+
+  .content-area{
+    padding:20px;
+  }
+
+  .hero-text h2{
+    font-size:2.2rem;
+  }
+
+  .nav-links{
+    position:absolute;
+    top:70px;
+    right:0;
+    background:white;
+    flex-direction:column;
+    width:220px;
+    padding:20px;
+    display:none;
+    box-shadow:var(--shadow-light);
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+
+  .hamburger{
+    display:flex;
+  }
+
+}
